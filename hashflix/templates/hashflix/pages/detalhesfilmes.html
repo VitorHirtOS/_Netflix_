@@ -1,0 +1,19 @@
+{% extends 'global/base.html' %}
+
+{% block title %} Hashflix |  {% endblock title %}
+
+{% block content %}
+
+    <h1>Essa é o detalhe do filme: {{ object.titulo }}</h1>
+    <p>{{ object }}</p>
+    <p>{{ object.descricao }}</p>
+    <img src="{{object.thumb.url}}" >
+
+    <h2>Episódio<h2>
+    {% for episodios in object.episodios.all %}
+      <a href="{{ episodios.video }}">
+        <p>Episódio {{ forloop.counter }}: {{ object.titulo }}</p>
+      </a>
+    {% endfor %}
+{% endblock content %}
+

@@ -1,0 +1,22 @@
+{% load static %}
+
+<header class="header-main-box">
+
+    <div class="container-box">
+            <div>
+              <a href="{% url 'filme:home' %}"><img src="{% static 'hashflix/img/hashflix.png' %}" />
+            </div></a> 
+            <div>
+                <nav class="navigation_bar">
+                    <ul>
+                        <label for="pesquise" method="GET">
+                            <input type="text" placeholder="Pesquisar ..." name="pesquise" id="pesquise">
+                        </label>
+                        <a href="#"><li>Sair</li></a>
+                        <a href="#"><li>Editar Perfil</li></a>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+
+</header>

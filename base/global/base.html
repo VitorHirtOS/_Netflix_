@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    {% include 'hashflix/partials/head/head.html' %}
+   <title> {% block title %}   {% endblock title %}</title>
+</head>
+<body>
+    {% include 'global/navbar.html' %}
+    <main id="main-content-box">
+        {% block content %}
+
+        {% endblock content %}
+    </main>
+    {% include 'global/footer.html' %}
+</body>
+</html>
